@@ -1,0 +1,16 @@
+{% extends 'Commerce/base.html' %}
+{% block title %}{{Commerce.name}} {% endblock}
+
+{% block content %}
+<div class="grid grid-cols-5 gap-6">
+    <div class="col-span-3">
+        <img src="{{Commerce.image.url }}" class="rounded-xl">
+    </div>
+    <div class="col-span-2 p-2 bg-gray-100 rounded-xl">
+        <h1 class="mb-6 text-3xl"{{ Commerce.name}}></h1>
+        <p class="text-gray-500"><strong>Price : </strong> {{Commerce.price}}</p>
+        <p class="text-gray-500"><strong>Seller: </strong> {{Commerce.price}}</p>
+    </div>
+</div>
+
+{% endblock %}
